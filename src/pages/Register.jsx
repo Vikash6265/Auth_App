@@ -24,7 +24,6 @@ const Register = () => {
   const {name,email,password,password2} = formData;
 
   const handleChange = (e) =>{
-    // console.log(e.target.value);
     setformData({
       ...formData,
       [e.target.name] : e.target.value
@@ -33,7 +32,6 @@ const Register = () => {
 
   const handleSubmit = (e) =>{
     e.preventDefault();
-    // console.log(data);
     dispatch(registerUser(formData));
   }
 
