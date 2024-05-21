@@ -52,7 +52,7 @@ const Login = () => {
   }
 
   return (
-    <Card>
+    <Card sx={{borderRadius:'15px'}}>
       <CardContent>
         <Typography variant='h5' align='center' sx={{margin:"20px 0px",color:"gray"}}>Login Here</Typography>
         <form onSubmit={handleSubmit}>

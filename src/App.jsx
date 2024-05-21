@@ -13,8 +13,8 @@ const App = () => {
   return (
    <Router>
      <Navbar/>
-     <Container maxWidth="xl" sx={{width:"100%",minHeight:"100vh",padding:"100px 0px",backgroundColor:"#E3E1D9",
-      display:'flex',alignItems:'center',justifyContent:'center'}}>
+     <Container maxWidth="xl" sx={{width:"100%",minHeight:"100vh",padding:"100px 10px",backgroundColor:"#E3E1D9",
+      display:'flex',alignItems:'center',justifyContent:'center',flexDirection:'column'}}>
       <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/Register' element={<Register/>}/>

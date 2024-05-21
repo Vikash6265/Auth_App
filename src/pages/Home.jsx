@@ -3,7 +3,7 @@ import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
-
+import welcome from '../assets/welcome.gif'
 
 const Home = () => {
 
@@ -23,8 +23,6 @@ const Home = () => {
       toast.error(message);
     }
 
-    // dispatch(fetchTrendingCoin());
-
   },[user,isError,message])
 
   if(isLoading ){ //  || coins.length === 0
@@ -39,6 +37,7 @@ const Home = () => {
   return (
     <>
       <Typography variant='h3' align='center' sx={{color:'#8C6A5D'}}>Welcome User</Typography>
+      <img className='imgtag' src={welcome} alt="" />
     </>
   )
 }
